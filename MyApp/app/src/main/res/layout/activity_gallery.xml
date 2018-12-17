@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GalleryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/study"
+            android:layout_width="220dp"
+            android:layout_height="65dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="118dp"
+            android:drawableStart="@drawable/ic_import_contacts_black_24dp"
+            android:drawableLeft="@drawable/ic_import_contacts_black_24dp"
+            android:gravity="right|center"
+            android:text="공부 게시판"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/qna"
+            android:layout_width="220dp"
+            android:layout_height="65dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="206dp"
+            android:drawableStart="@drawable/qna"
+            android:drawableLeft="@drawable/qna"
+            android:gravity="right|center"
+            android:text="Q n A"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/together"
+            android:layout_width="220dp"
+            android:layout_height="65dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="293dp"
+            android:drawableStart="@drawable/ic_priority_high_black_24dp"
+            android:drawableLeft="@drawable/ic_priority_high_black_24dp"
+            android:gravity="right|center"
+            android:text="한성 투게더"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/hansungsay"
+            android:layout_width="220dp"
+            android:layout_height="65dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="389dp"
+            android:drawableStart="@drawable/ic_supervisor_account_black_24dp"
+            android:drawableLeft="@drawable/ic_supervisor_account_black_24dp"
+            android:gravity="right|center"
+            android:text="한성 청원"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/setting"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="328dp"
+            android:layout_marginLeft="328dp"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@drawable/ic_settings_black_24dp"
+            android:drawableLeft="@drawable/ic_settings_black_24dp"/>
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
