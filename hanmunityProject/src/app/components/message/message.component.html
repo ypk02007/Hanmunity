@@ -1,0 +1,35 @@
+<div class="maincontainer">
+    <button mat-raised-button routerLink="/home">Home</button>
+    <button mat-raised-button routerLink="/study">Study</button>
+    <button mat-raised-button routerLink="/question">Q&A</button>
+    <button mat-raised-button routerLink="/together">Together</button>
+    <button mat-raised-button routerLink="/petition">Petition</button> 
+  </div>
+  <h1 class="message">한성투게더</h1>
+  <div class="Container">
+  <div class="noticeBorder">
+    <div id="messages" #scrollMe>
+      <div *ngFor="let list of message">
+        <div id="mine" *ngIf="isMine(list.writer, user.name)">
+          {{list.writer}} : {{list.content}}<br>{{list.time}}
+        </div>
+        <div id="notMine" *ngIf="!isMine(list.writer, user.name)">
+          {{list.writer}} : {{list.content}}<br>{{list.time}}
+        </div>
+      </div>
+    </div>
+    <div>
+      <form (submit)="sendMessage(user.name)">
+        <span id="inputs">
+          <input type="text" [(ngModel)]="content" name="content">
+        </span>
+        <span id="inputs">
+          <button id="bigbutton" type="submit" value="Submit"> send </button>
+        </span>
+        <span>
+          <button id="bigbutton" routerLink="/together"> Back </button>
+        </span>
+      </form>
+    </div>
+  </div>
+</div>

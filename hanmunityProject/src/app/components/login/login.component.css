@@ -1,0 +1,82 @@
+.han{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hanlogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-top:80px;
+}
+.loginform{
+    font-family: 'Jua', sans-serif;
+    margin: auto;
+    padding-top: 20px;
+    background-color: white;
+    text-align: center;
+    width: 300px;
+    height: 330px;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  
+}
+input[type=text], input[type=password] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: rgba(187, 206, 224, 0.726);
+    color: black;
+    border-radius: 4px;
+    font-weight: 0.3px;
+    cursor: pointer;
+    font-family: 'Jua', sans-serif;
+}
+
+button:hover {
+    background-color: rgba(199, 213, 226, 0.829);
+}
+
+#inputs {
+    padding: 10px;
+}
+/* .ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; 
+  }
+  
+  .ng-invalid:not(form)  {
+    border-left: 5px solid #a94442; 
+  } */
+
+  .example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+  .hantitle{
+    font-size:80px;
+    font-family: 'Jua', sans-serif;
+    color: DodgerBlue;
+    text-align:center;
+    text-shadow: 1px 1px grey;
+  }
+.hanti{
+    font-size:110px;
+    font-family: 'Jua', sans-serif;
+    color: #87CEFA;
+    text-align:center;
+    text-shadow: 1px 1px grey;
+}
+.hof{
+    margin-top: 30px;
+    margin-left:auto;
+    margin-right:auto;
+}

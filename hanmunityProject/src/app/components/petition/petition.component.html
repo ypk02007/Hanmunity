@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Do+Hyeon&amp;subset=korean" rel="stylesheet">
+<div class="maincontainer">
+    <button mat-raised-button routerLink="/home">Home</button>
+    <button mat-raised-button routerLink="/study">Study</button>
+    <button mat-raised-button routerLink="/question">Q&A</button>
+    <button mat-raised-button routerLink="/together">Together</button>
+    <button mat-raised-button routerLink="/petition">Petition</button> 
+  </div>
+
+<h1 class="Container"  >한성청원</h1>
+
+      <div class="noticeBorder">
+          <button mat-button routerLink="/writePetition">글쓰기</button>
+      <div *ngIf="petition && !one">
+        <div *ngFor="let list of petition; let i=index">
+          <div id="written" (click)="showOne(i, list._id, list.max)" *ngIf="pageCheck(i)">{{list.title}}<br>{{list.date}}</div>
+        </div>
+      </div>
+      <div *ngIf="petition && one">
+        <div id="written">
+          제목 : {{petitionOne.title}}<br>내용 : {{petitionOne.content}}<br>청원 수 : {{num}} / {{petitionOne.max}}<br>
+          <span *ngIf="num>=petitionOne.max">목표 청원 수를 달성한 글입니다. </span>
+          <span *ngIf="clicked&&num<petitionOne.max">이미 클릭하셨습니다. </span>
+          <button id="bigbutton" (click)="upCheck(user._id)" *ngIf="!clicked&&num<petitionOne.max"><img src="https://cdn1.iconfinder.com/data/icons/basic-ui-elements-color/700/01_arrow_up-512.png" width="30px" height="30px"></button>
+          <!--<button id="bigbutton" disabled *ngIf="num>=numMax"><img src="https://cdn1.iconfinder.com/data/icons/basic-ui-elements-color/700/01_arrow_up-512.png" width="30px" height="30px"></button>-->
+        </div>
+      </div>
+    <footer *ngIf="petition && !one">
+      <form (submit)="searchPetition()">
+        <label id="ss" for="name"> 검색 </label>
+        <input type="text" [(ngModel)]="search" name="search">
+        <button type="submit" value="Search"><img src="https://png.pngtree.com/element_pic/17/03/24/61e7397810c48656dfa148fdd66d229d.jpg" width="30px" height="30px"></button>
+      </form>
+      <span class="nn" (click)="changePage(-1)">◀</span>
+      <span *ngFor="let num of pageIndex">
+        <span class="nn" *ngIf="num!=pageNum" (click)="changePage(num)"> {{num}} </span>
+        <span class="nn" *ngIf="num==pageNum" id="currentPage"> {{num}} </span>
+      </span>
+      <span class="nn" (click)="changePage(0)">▶</span>
+    </footer>
+</div>

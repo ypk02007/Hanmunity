@@ -1,0 +1,33 @@
+<link href="https://fonts.googleapis.com/css?family=Jua&amp;subset=korean" rel="stylesheet">
+<div class="hof">
+    <h1 class="hanti">한뮤니티</h1>
+</div>
+
+<div class="loginform">
+  <div><h5>REGISTER</h5>
+    <form (submit)="onRegisterSubmit()">
+      <div id="inputs">
+        <label> 아이디 : </label>
+        <input type="text" class="form-control" [(ngModel)]="username" name="username">
+      </div>
+      <div id="inputs">
+        <label> 비밀번호 : </label>
+        <input type="password" class="form-control" [(ngModel)]="password" name="password">
+      </div>
+      <div id="inputs">
+          <label> 이름 : </label>
+          <input type="text" class="form-control" [(ngModel)]="name" name="name">
+      </div>
+      <div id="inputs">
+          <label> 이메일 : </label>
+          <input type="text" class="form-control" [(ngModel)]="email" name="email">
+      </div>
+      <div id="inputs">
+        <button id="bigbutton" type="submit" value="Submit"> 회원가입 </button>
+      </div>
+      <div id="inputs">
+        <button id="bigbutton" [routerLink]="['/login']"> 돌아가기 </button>
+      </div>
+    </form>
+  </div>
+</div>

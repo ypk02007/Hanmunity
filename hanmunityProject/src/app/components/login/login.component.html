@@ -1,0 +1,30 @@
+<!--<img class="hanlogo" style="width:300px" src="https://postfiles.pstatic.net/MjAxODExMTNfMTEg/MDAxNTQyMDk4MTI5NTUy.NN8HAtqZOfzp4h1MK-2GfxjbsdLTO1PeRlskR3GEIvAg.DNbEib8Dg0xsGoP0gixah8kdGipBJEKU9v_5UGEIsysg.PNG.poluro/hanmu.PNG?type=w773" >-->
+<!-- <img class="han" src="https://postfiles.pstatic.net/MjAxODExMThfNTIg/MDAxNTQyNTM0NTY1MTU2.1QIr8qwkVXsY6nPsRoco9ESAHiLb-KOsbQm7YhEZfBkg.UXuhXq9MtX4T4ZkcjpHNSceKqzI5VXD_dNcnHG0e-WEg.PNG.poluro/hanlogo.PNG?type=w773"> -->
+<link href="https://fonts.googleapis.com/css?family=Jua&amp;subset=korean" rel="stylesheet">
+<div class="hof">
+    <h1 class="hanti">한뮤니티</h1>
+</div>
+
+<div class="loginform">
+  <div><h5>LOGIN</h5>
+    <form (submit)="onLoginSubmit()">
+      <div id="inputs">
+        <label> 아이디 : </label>
+        <input type="text" class="form-control" [(ngModel)]="username" name="username">
+      </div>
+      <div id="inputs">
+        <label> 비밀번호 : </label>
+        <input type="password" class="form-control" [(ngModel)]="password" name="password">
+      </div>
+      <div id="inputs">
+        <button id="bigbutton" type="submit" value="Login"> 로그인 </button>
+      </div>
+      <div id="inputs">
+        <button id="otherbutton" [routerLink]="['/register']"> 회원가입 </button>
+        <button id="otherbutton" [routerLink]="['/find']"> ID/PW 찾기 </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+

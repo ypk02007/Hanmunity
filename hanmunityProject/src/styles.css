@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* .Containertitle{
+    font-family:'Do Hyeon', sans-serif;
+    border-bottom: 2px green;
+} */
+.maincontainer{
+    font-family:'Do Hyeon', sans-serif;
+}
+.noticeBorder{
+    margin-top: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* border-radius: 20px; */
+    /* border: 2px solid rgb(27, 101, 212); */
+    /* background-color: rgb(27, 101, 212); */
+    background-color:white;
+    box-shadow: 5px 5px 10px grey;
+    width: 800px;
+    margin: auto;
+}
+.nn{
+    color: grey;
+}
+
